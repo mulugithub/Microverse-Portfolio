@@ -161,9 +161,9 @@ main {
 }
 
 .tags {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
   padding: 0;
   gap: 1.25rem;
   list-style: none;
@@ -184,6 +184,7 @@ ul li a:hover {
   padding: 0.3rem 0.7rem;
   background-color: var(--tag-bg-color);
   margin: 1rem 0;
+  float: right;
 }
 
 button:hover,

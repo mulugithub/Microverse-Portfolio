@@ -354,9 +354,9 @@ form input[type="submit"] {
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   color: #fff;
-  background-color: #df1671;
+  background-color: #6070ff;
   transition: 0.5ms ease-in-out;
-  box-shadow: 1px 0 0 #df1671;
+  border: 1px solid #ffff;
   transform: scale(1.1);
 }
 

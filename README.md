@@ -39,9 +39,10 @@
 > The following are the key features of the application.
 
 - **[Header section including logo and hamburger button]**
-- **[Headline section]**
-- **[Works section]**
-- **[About myself section]**
+- **[Headline ]**
+- **[Works ]**
+- **[About myself]**
+- **[Contact form]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -99,7 +100,6 @@ code .
 
 > The following features will add to the project using flex and grid layout.
 
-- [ ] **[Contact form]**
 - [ ] **[Desktop version]**
 
 

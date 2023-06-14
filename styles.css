@@ -123,10 +123,7 @@ main {
 .works-section {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(10%, 1fr));
-  /* gap: 1.2rem; */
   justify-content: center;
-  /* padding: 1rem 3rem;
-  margin-top: 4rem; */
 }
 
 .cards-container {
@@ -441,8 +438,8 @@ input[type="submit"]:focus {
   .cards-container {
     gap: 1.5rem;
     padding: 0.5rem 1.25rem;
-    /* margin-left: -2rem; */
   }
+
   .cards-container .description {
     width: 40vw;
   }
@@ -458,7 +455,7 @@ input[type="submit"]:focus {
   }
 
   .cards-container > .screenshoot-portfolio {
-    width: 19rem
+    width: 19rem;
   }
 
   /* about section */
@@ -475,16 +472,16 @@ input[type="submit"]:focus {
     justify-content: center;
     gap: 0.6em;
     padding-left: 1.25rem;
-    margin-top: -4rem
+    margin-top: -4rem;
   }
-  
+
   .resume-btn {
     width: 10rem;
   }
-  
+
   .skill-list {
     padding: 10em 0 4em 0;
-  } 
+  }
 
   .language-wrapper {
     display: flex;

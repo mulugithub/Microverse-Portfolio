@@ -69,6 +69,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* overflow: hidden; */
 }
 
 /* headline section */
@@ -403,7 +404,7 @@ input[type="submit"]:active {
   header {
     padding: 1rem 10rem 2rem 10rem;
     justify-content: space-between;
-    margin-top: 0;
+    margin: 0;
   }
 
   nav .menu {
@@ -425,7 +426,7 @@ input[type="submit"]:active {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-bottom: 2em;
+    margin: 0;
     min-height: 80vh;
     padding: 3em 20% 4em 20%;
   }
@@ -452,6 +453,7 @@ input[type="submit"]:active {
   .cards-container {
     gap: 1.5rem;
     padding: 0.5rem 1.25rem;
+    width: auto;
   }
 
   .cards-container .description {
@@ -477,13 +479,7 @@ input[type="submit"]:active {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-left: 0.2rem;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .about-myself-section::-webkit-scrollbar {
-    display: none;
+    margin-left: 0rem;
   }
 
   .about-myself-section .about-wrapper {
@@ -526,10 +522,13 @@ input[type="submit"]:active {
     background-image: url(images/contact\ form\ bgdesktop@1x.png);
     background-size: 92%;
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
     padding: 6rem 33%;
     border-top-left-radius: 12em;
+  }
+
+  .contact-section {
+    margin: 0;
   }
 
   .home-indicator {

@@ -190,7 +190,15 @@ button:hover,
 .tags-button:hover {
   color: var(--section-bg-color);
   background-color: var(--tag-button-color);
-  transition: 0.5ms;
+  transition: 0.5ms ease-in-out;
+  transform: scale(0.8);
+}
+
+button:active,
+.tags-button:active {
+  color: var(--section-bg-color);
+  background-color: #2230d2;
+  transition: 0.5ms ease-in-out;
 }
 
 .project-action {
@@ -360,6 +368,12 @@ input[type="submit"]:focus {
   transition: 0.5ms ease-in-out;
 }
 
+input[type="submit"]:active {
+  color: #fff;
+  background-color: #2230d2;
+  transition: 0.5ms ease-in-out;
+}
+
 .contact-section img {
   margin-top: 5rem;
   align-items: center;
@@ -464,6 +478,12 @@ input[type="submit"]:focus {
     flex-direction: row;
     width: 100%;
     margin-left: 0.2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .about-myself-section::-webkit-scrollbar {
+    display: none;
   }
 
   .about-myself-section .about-wrapper {

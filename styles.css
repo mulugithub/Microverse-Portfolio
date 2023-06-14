@@ -69,7 +69,6 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* overflow: hidden; */
 }
 
 /* headline section */
@@ -479,7 +478,7 @@ input[type="submit"]:active {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-left: 0rem;
+    margin-left: 0;
   }
 
   .about-myself-section .about-wrapper {

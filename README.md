@@ -43,6 +43,7 @@
 - **[Works ]**
 - **[About myself]**
 - **[Contact form]**
+- **[ Desktop Version]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -100,7 +101,7 @@ code .
 
 > The following features will add to the project using flex and grid layout.
 
-- [ ] **[Desktop version]**
+- [ ] **[Animation and Transition]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

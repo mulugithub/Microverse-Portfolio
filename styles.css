@@ -20,8 +20,8 @@ li a {
 :root {
   --main-bg-color: #e5e5e5;
   --section-bg-color: #fff;
-  --card-detail-color: #7a869a;
-  --card-role-color: #344563;
+  --card-role-color: #7a869a;
+  --card-client-color: #344563;
   --tag-button-color: #6070ff;
   --tag-bg-color: #ebebff;
   --primary-color: #396df2;
@@ -63,6 +63,10 @@ nav {
   background-color: var(--section-bg-color);
 }
 
+.menu {
+  display: none;
+}
+
 /* main section */
 
 main {
@@ -77,25 +81,33 @@ main {
   flex-direction: column;
   padding: 8.2rem 1.5rem;
   margin: -0.1rem -2.4rem;
+  gap: 0.25rem;
   border-bottom-left-radius: 5.6rem;
   background-image: url(images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
-.header-content,
+.header-content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: var(--header-color);
+}
+
 .project-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 3.25rem;
+  font-size: 2rem;
+  line-height: 2.75rem;
   color: var(--header-color);
 }
 
 .description {
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.94rem;
   line-height: 1.5rem;
   color: #344563;
 }
@@ -136,7 +148,16 @@ main {
   width: 85vw;
 }
 
-.screenshoot-portfolio {
+.snapshoot-portfolio.desktop,
+.left-block .project-title.desktop,
+.left-block .card-client.desktop,
+.left-block .card-role.desktop,
+.left-block .description.desktop,
+.left-block .tags .tags-button.desktop {
+  display: none;
+}
+
+.snapshoot-portfolio {
   padding-bottom: 2rem;
 }
 
@@ -144,19 +165,18 @@ main {
   display: flex;
   gap: 0.7rem;
   align-items: center;
-  list-style-type: none;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.813rem;
+  line-height: 1rem;
   margin: 1rem 0;
 }
 
 .card-client {
-  color: var(--card-role-color);
+  color: var(--card-client-color);
 }
 
-.card-detail {
-  color: var(--card-detail-color);
+.card-role {
+  color: var(--card-role-color);
 }
 
 .tags {
@@ -176,8 +196,8 @@ ul li a:hover {
 
 .tags-button {
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   color: var(--tag-button-color);
   border-radius: 0.5rem;
   border: none;
@@ -204,15 +224,15 @@ button:active,
 .project-action {
   font-weight: 500;
   font-size: 1.1rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: var(--primary-color);
   background-color: var(--section-bg-color);
   border-radius: 0.5rem;
   border: 1px solid #6070ff;
-  padding: 0.8rem 0;
+  padding: 0.75rem;
+  gap: 0.625rem;
   margin: 1rem 0;
-  width: 10rem;
 }
 
 /* ./works section */
@@ -306,9 +326,9 @@ button:active,
 
 .contact-wrapper {
   background-image: url(images/contact-form-shapes-mobile.png);
-  background-size: contain;
+  background-size: 69%;
   background-repeat: no-repeat;
-  background-position-x: 100%;
+  background-position-x: right;
   background-color: #6070ff;
   display: flex;
   flex-direction: column;
@@ -333,6 +353,7 @@ button:active,
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.75rem;
+  padding: 0 1.25rem;
 }
 
 form {
@@ -375,20 +396,11 @@ input[type="submit"]:active {
 }
 
 .contact-section img {
-  margin-top: 5rem;
+  margin-bottom: -4.5rem;
   align-items: center;
 }
 
 /* contact section */
-
-/* mobile version */
-@media screen and (min-width: 375px) {
-  .menu {
-    display: none;
-  }
-}
-
-/* ./mobile version */
 
 /* desktop version */
 @media screen and (min-width: 768px) {
@@ -423,11 +435,21 @@ input[type="submit"]:active {
   .headline-section {
     background-image: url(images/Header\ bgdesktop@2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 98%;
     background-position: center;
     margin: 0;
     min-height: 80vh;
-    padding: 3em 20% 4em 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 1.5rem;
   }
 
   .header-content {
@@ -437,26 +459,58 @@ input[type="submit"]:active {
     line-height: 3.75rem;
     color: #091e42;
     letter-spacing: 0.023rem;
-    margin-top: 20%;
+    margin-top: 18%;
+  }
+
+  .snapshoot-portfolio.desktop,
+  .left-block .project-title.desktop,
+  .left-block .card-client.desktop,
+  .left-block .card-role.desktop,
+  .left-block .description.desktop,
+  .left-block .tags .tags-button.desktop {
+    display: block;
+  }
+
+  .snapshoot-portfolio.mobile,
+  .left-block .project-title.mobile,
+  .left-block .card-client.mobile,
+  .left-block .card-role.mobile,
+  .left-block .description.mobile {
+    display: none;
   }
 
   .description {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .left-block {
-    padding-top: 1rem;
+    /* padding: 1rem; */
   }
 
   .cards-container {
-    gap: 1.5rem;
-    padding: 0.5rem 1.25rem;
-    width: auto;
+    gap: 1.25rem;
+    min-width: 75vw;
+    min-height: auto;
+    padding: 1.5rem;
   }
 
-  .cards-container .description {
-    width: 40vw;
+  .project-detail .card-client,
+  .project-detail .card-role {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .project-detail .card-client {
+    font-weight: 500;
+  }
+
+  .project-detail .card-role {
+    font-weight: 400;
+  }
+
+  .cards-container .description.desktop {
+    width: 100%;
   }
 
   .cards-container:nth-child(odd) {
@@ -469,8 +523,9 @@ input[type="submit"]:active {
     flex-direction: row-reverse;
   }
 
-  .cards-container > .screenshoot-portfolio {
-    width: 19rem;
+  .cards-container > .snapshoot-portfolio {
+    width: 50%;
+    height: 100%;
   }
 
   /* about section */

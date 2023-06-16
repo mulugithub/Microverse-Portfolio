@@ -17,6 +17,10 @@ li a {
   text-decoration: none;
 }
 
+img.hover {
+  transform: scale(1.1);
+}
+
 :root {
   --main-bg-color: #e5e5e5;
   --section-bg-color: #fff;

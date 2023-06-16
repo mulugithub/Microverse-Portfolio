@@ -17,7 +17,7 @@ li a {
   text-decoration: none;
 }
 
-img.hover {
+img:hover {
   transform: scale(1.1);
 }
 
@@ -54,8 +54,13 @@ header {
   color: #6070ff;
   line-height: 1.25rem;
   text-decoration: none;
+  animation: logo-rotate 2s alternate 2s;
 }
 
+@keyframes logo-rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
 nav {
   cursor: pointer;
 }
@@ -374,8 +379,12 @@ button:disabled,
   font-weight: 400;
   line-height: 1.75rem;
   padding: 0 1.25rem;
+  transition: all 1s ease-in-out;
 }
 
+.contact-section p:hover {
+  transform: translateX(10px);
+}
 form {
   display: flex;
   flex-direction: column;

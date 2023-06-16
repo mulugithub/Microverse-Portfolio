@@ -58,9 +58,15 @@ header {
 }
 
 @keyframes logo-rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 nav {
   cursor: pointer;
 }
@@ -385,6 +391,7 @@ button:disabled,
 .contact-section p:hover {
   transform: translateX(10px);
 }
+
 form {
   display: flex;
   flex-direction: column;

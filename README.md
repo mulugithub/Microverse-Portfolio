@@ -44,6 +44,7 @@
 - **[About myself]**
 - **[Contact form]**
 - **[ Desktop Version]**
+- **[ Animation and Transition]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,7 +102,8 @@ code .
 
 > The following features will add to the project using flex and grid layout.
 
-- [ ] **[Animation and Transition]**
+- [ ] **[When the user clicks (or taps) the hamburger button, the mobile menu appears.]**
+- [ ] **[When the user clicks (or taps) the close (X) button, the mobile menu disappears.]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

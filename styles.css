@@ -188,10 +188,13 @@ main {
   list-style: none;
 }
 
-ul li a:hover {
+nav .menu a:hover {
   color: var(--section-bg-color);
   background-color: var(--tag-button-color);
   cursor: pointer;
+  transform: scale(1.5);
+  border-radius: 0.56rem;
+  padding: 0.5rem;
 }
 
 .tags-button {
@@ -214,11 +217,24 @@ button:hover,
   transform: scale(0.8);
 }
 
-button:active,
-.tags-button:active {
+button:focus,
+.tags-button:focus {
   color: var(--section-bg-color);
   background-color: #2230d2;
   transition: 0.5ms ease-in-out;
+}
+
+button:active,
+.tags-button:active {
+  color: var(--tag-button-color);
+  background-color: var(--section-bg-color);
+  border: 1px solid #7f8cff;
+}
+
+button:disabled,
+.tags-button:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 .project-action {

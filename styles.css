@@ -54,7 +54,7 @@ header {
   color: #6070ff;
   line-height: 1.25rem;
   text-decoration: none;
-  animation: logo-rotate 2s alternate 2s;
+  animation: logo-rotate 1s alternate 1s;
 }
 
 @keyframes logo-rotate {
@@ -176,6 +176,11 @@ main {
   padding-bottom: 2rem;
 }
 
+.snapshoot-portfolio:hover {
+  transition: all 0.1s ease-in 0.1s;
+  transform: scale(1.05);
+}
+
 .project-detail {
   display: flex;
   gap: 0.7rem;
@@ -228,15 +233,14 @@ button:hover,
 .tags-button:hover {
   color: var(--section-bg-color);
   background-color: var(--tag-button-color);
-  transition: 0.5ms ease-in-out;
-  transform: scale(0.8);
+  transition: all 0.1s ease-in 0.1s;
 }
 
 button:focus,
 .tags-button:focus {
   color: var(--section-bg-color);
   background-color: #2230d2;
-  transition: 0.5ms ease-in-out;
+  transition: all 0.1s ease-in 0.1s;
 }
 
 button:active,
@@ -422,13 +426,13 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
   color: #fff;
   background-color: #6070ff;
-  transition: 0.5ms ease-in-out;
+  transition: all 0.1s ease-in 0.1s;
 }
 
 input[type="submit"]:active {
   color: #fff;
   background-color: #2230d2;
-  transition: 0.5ms ease-in-out;
+  transition: all 0.1s ease-in 0.1s;
 }
 
 .contact-section img {
@@ -452,6 +456,9 @@ input[type="submit"]:active {
     padding: 1rem 10rem 2rem 10rem;
     justify-content: space-between;
     margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
   }
 
   nav .menu {
@@ -521,7 +528,7 @@ input[type="submit"]:active {
   }
 
   .left-block {
-    /* padding: 1rem; */
+    padding: 1rem 8rem 1rem 1rem;
   }
 
   .cards-container {
@@ -562,6 +569,7 @@ input[type="submit"]:active {
   .cards-container > .snapshoot-portfolio {
     width: 50%;
     height: 100%;
+    padding: 0 6px 6px 6px;
   }
 
   /* about section */
@@ -586,7 +594,7 @@ input[type="submit"]:active {
   }
 
   .skill-list {
-    padding: 10em 0 4em 0;
+    padding: 10em 13rem 4em 0;
   }
 
   .language-wrapper {
@@ -619,6 +627,12 @@ input[type="submit"]:active {
 
   .contact-section {
     margin: 0;
+  }
+
+  form input[type="submit"] {
+    padding-right: 23%;
+    margin-left: 40%;
+    margin-right: 40%;
   }
 
   .home-indicator {

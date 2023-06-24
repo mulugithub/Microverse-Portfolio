@@ -24,8 +24,9 @@
 
 # 📖 [My Portfolio] <a name="about-project"></a>
 
-**[My Portfolio]** is a responsive website that shows the header section, headline section, works section, and about me section of a page, and to setup a mobile-first application.
-
+**[My Portfolio]** is a responsive website that shows the header section, headline section, works section, and about me section of a page, conatct form for a mobile-first design and desktop version portfolio website.
+-Have a look at the 
+[video description](https://www.loom.com/share/f2dd86e375a14df6b0cc43a84b77a4c0?sid=53e3542b-5cfa-40c2-9aa6-88fffbbb728a) for  my portfolio project.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

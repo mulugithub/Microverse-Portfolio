@@ -31,7 +31,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This portfolio website bulit with HTML and CSS
+> This portfolio website bulit with HTML , CSS and Javascript
 
 <!-- Features -->
 

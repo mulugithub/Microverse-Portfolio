@@ -254,7 +254,7 @@ main {
   list-style: none;
 }
 
-nav .menu a:hover{
+nav .menu a:hover {
   color: var(--section-bg-color);
   background-color: var(--tag-button-color);
   cursor: pointer;

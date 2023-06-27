@@ -258,9 +258,9 @@ nav .menu a:hover {
   color: var(--section-bg-color);
   background-color: var(--tag-button-color);
   cursor: pointer;
-  transform: scale(1.5);
   border-radius: 0.56rem;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.2s ease-in 0.1s;
 }
 
 .tags-button {
@@ -574,7 +574,7 @@ input[type="submit"]:active {
   }
 
   .left-block {
-    padding: 1rem 8rem 1rem 1rem;
+    overflow-x: auto;
   }
 
   .cards-container {
@@ -624,6 +624,7 @@ input[type="submit"]:active {
     flex-direction: row;
     width: 100%;
     margin-left: 0;
+    padding-top: 0;
   }
 
   .about-myself-section .about-wrapper {
@@ -632,7 +633,7 @@ input[type="submit"]:active {
     justify-content: center;
     gap: 0.6em;
     padding-left: 1.25rem;
-    margin-top: -4rem;
+    margin-top: 3rem;
   }
 
   .resume-btn {
@@ -640,7 +641,8 @@ input[type="submit"]:active {
   }
 
   .skill-list {
-    padding: 10em 13rem 4em 0;
+    padding-right: 6em;
+    padding-top: 13rem;
   }
 
   .language-wrapper {
@@ -683,6 +685,11 @@ input[type="submit"]:active {
 
   .home-indicator {
     display: none;
+  }
+
+  header nav ul li a.active {
+    border-bottom: 3px solid var(--tag-button-color);
+    font-weight: 600;
   }
 }
 

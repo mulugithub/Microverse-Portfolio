@@ -31,7 +31,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This portfolio website bulit with HTML and CSS
+> This portfolio website bulit with HTML , CSS and Javascript
 
 <!-- Features -->
 
@@ -46,7 +46,7 @@
 - **[Contact form]**
 - **[ Desktop Version]**
 - **[ Animation and Transition]**
-
+- **[ Mobile menu]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,9 +103,9 @@ code .
 
 > The following features will add to the project using flex and grid layout.
 
-- [ ] **[When the user clicks (or taps) the hamburger button, the mobile menu appears.]**
-- [ ] **[When the user clicks (or taps) the close (X) button, the mobile menu disappears.]**
-
+- [ ] **[ Details modal]**
+- [ ] **[ Validate contact form ]**
+- [ ] **[ Preserve data in the browser]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->

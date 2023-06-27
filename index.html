@@ -23,15 +23,24 @@
         </div>
         <ul class="menu">
           <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"> <a href="#about">About</a></li>
-          <li class="nav-item"> <a href="#contact">Contact</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- mobile menu-->
+      <div class="mobile-menu hidden">
+        <span class="close-menu"><img src="images/Iconmenu-close.png" alt="close menu icon"></span>
+      <div class="mobile-menu-content">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      </div>
     </header>
     <!--./end of header section-->
 
     <!-- main section-->
-    <main>
+    <main class="blur">
       <!-- headline section-->
       <section class="headline-section">
         <div class="headline">
@@ -85,7 +94,7 @@
       <!-- ./end of headeline section -->
 
       <!-- works section -->
-      <section class="works-section">
+      <section id="portfolio" class="works-section">
         <div class="cards-container">
           <img
             src="images/Snapshoot Portfolio-mob-01.png"
@@ -262,7 +271,7 @@
       </section>
       <!--./end of works section-->
       <!-- about myself section -->
-      <section class="about-myself-section">
+      <section id="about" class="about-myself-section">
         <div class="about-wrapper">
           <h2 class="header-content">About Myself</h2>
           <p class="description">
@@ -374,7 +383,7 @@
       </section>
       <!-- ./end of about myself section -->
       <!-- contact form section -->
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <div class="contact-wrapper">
           <h1>Contact me</h1>
           <p>
@@ -419,5 +428,6 @@
       <!-- end contact form section -->
     </main>
     <!-- ./end of main section -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

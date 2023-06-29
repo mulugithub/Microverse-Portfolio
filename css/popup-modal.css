@@ -1,0 +1,142 @@
+.popup-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 90%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 4%;
+  transform: translate(calc(50vw - 50%));
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 20;
+}
+
+.popup-modal-container .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .close-modal {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  color: #67798e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-modal-container .project-image-container {
+  border-radius: 0.5rem;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.modal-content .snapshoot-popup.mobile img {
+  padding-bottom: 0.4rem;
+}
+
+.modal-content img.mobile {
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.modal-content .snapshoot-popup {
+  border-radius: 0.56rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.modal-content .snapshoot-popup.desktop img {
+  width: 100%;
+  max-height: 30%;
+  overflow: hidden;
+  border-radius: 0.56rem;
+}
+
+.modal-content .snapshoot-popup img:hover {
+  transform: scale(1);
+}
+
+.modal-content .snapshoot-popup.desktop,
+.popup-modal-container .modal-header .project-title.desktop,
+.modal-content .project-detail .card-client.desktop,
+.modal-content .project-detail .card-role.desktop,
+.modal-content .description.desktop,
+.modal-content .tags .tags-button.desktop {
+  display: none;
+}
+
+.live-source {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.live-source a {
+  border: 1px solid #6070ff;
+  text-decoration: none;
+  border-radius: 0.56rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.live-source a.button:hover {
+  background: #6070ff;
+  box-shadow: 0 0.56rem 1.2rem rgba(64, 83, 252, 0.24);
+  border-radius: 0.56rem;
+  color: #fff;
+}
+
+.modal-content {
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  backdrop-filter: blur(0.95rem);
+}
+
+/* desktop version */
+@media screen and (min-width: 768px) {
+  .modal-content img.mobile {
+    display: none;
+  }
+
+  .modal-content .snapshoot-popup.desktop,
+  .popup-modal-container .modal-header .project-title.desktop,
+  .modal-content .project-detail .card-client.desktop,
+  .modal-content .project-detail .card-role.desktop,
+  .modal-content .description.desktop,
+  .modal-content .tags .tags-button.desktop {
+    display: block;
+  }
+
+  .modal-content .snapshoot-popup.mobile,
+  .popup-modal-container .modal-header .project-title.mobile,
+  .modal-content .project-detail .card-client.mobile,
+  .modal-content .project-detail .card-role.mobile,
+  .modal-content .description.mobile {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}

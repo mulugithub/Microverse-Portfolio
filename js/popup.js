@@ -147,7 +147,6 @@ projects.forEach((project, index) => {
 const hideSecondTechnology = document.querySelector('.left-block .tags li:nth-child(2)');
 hideSecondTechnology.style.display = 'none';
 
-
 // Get the popup-modal-container class
 const popupModal = document.querySelector('.popup-modal-container');
 const overlay = document.querySelector('.overlay');
@@ -183,13 +182,17 @@ function showPopupModal(projectId) {
       <li class="card-role mobile">${projects[projectId].roles[2][0]}</li>
       <li class="card-role desktop">${projects[projectId].roles[2][1]}</li>
     </ul>
-    
+  
     <div class='snapshoot-popup mobile'> <img src="${projects[projectId].featured_images[0]}" alt="${projects[projectId].name[0]}"></div>
     <div class='snapshoot-popup desktop'> <img src="${projects[projectId].featured_images[1]}" alt="${projects[projectId].name[1]}"></div>
-
+    
+    <div class="description-container">
+    <div class="popup-left">
     <p class="description mobile">${projects[projectId].details[0]}</p>
     <p class="description desktop">${projects[projectId].details[1][0]}</p>
     <p class="description desktop">${projects[projectId].details[1][1]}</p>
+    </div>
+    <div class="popup-right">
     <ul class="tags">
       <li class="tags-button mobile">${projects[projectId].technologies[0][0]}</li>
       <li class="tags-button mobile">${projects[projectId].technologies[0][1]}</li>
@@ -198,13 +201,15 @@ function showPopupModal(projectId) {
       <li class="tags-button desktop">${projects[projectId].technologies[1][2]}</li>
     </ul>
 
-    <img class="mobile" src="images/divider-mobile-modal.png" alt="divider image for mobile popup">
+    <img src="images/divider-mobile-modal.png" alt="divider image for mobile popup">
     
     <div class="live-source">
-    <a type='button' class='project-action' href='https://${projects[projectId].liveLink}' target='_blank'>See Live <img src='./images/Icon-Live.png' alt='Live link icon'></a>
-    <a type='button' class='project-action' href='https://${projects[projectId].sourceLink}' target='_blank'>See Source <img src='./images/Icon-GitHub.png' alt='Github icon'></a>
+    <a class='live-soucre-btn' href='https://${projects[projectId].liveLink}' target='_blank'>See Live <img src='./images/Icon-Live.png' alt='Live link icon'></a>
+    <a class='live-soucre-btn' href='https://${projects[projectId].sourceLink}' target='_blank'>See Source <img src='./images/Icon-GitHub.png' alt='Github icon'></a>
     </div>
-    
+    </div>
+
+    </div>
     </div>
   `;
 }

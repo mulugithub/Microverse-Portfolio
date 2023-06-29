@@ -11,9 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/popup-modal.css" />
   </head>
   <body>
+
     <!-- header section-->
     <header>
       <a href="#" class="my-logo">My Logo</a>
@@ -38,6 +40,17 @@
       </div>
     </header>
     <!--./end of header section-->
+
+    <!-- overlay-->
+    <div class="overlay hide">
+      
+    </div>
+   
+      <!-- popup modal container-->
+    <div class="popup-modal-container hide">
+
+    </div>
+     <!-- end of popup modal container-->
 
     <!-- main section-->
     <main>
@@ -92,9 +105,10 @@
         </div>
       </section>
       <!-- ./end of headeline section -->
-
+  
       <!-- works section -->
-      <section id="portfolio" class="works-section">
+       <!-- end of works section -->
+       
         <div class="cards-container">
           <img
             src="images/Snapshoot Portfolio-mob-01.png"
@@ -268,7 +282,7 @@
             <button type="button" class="project-action">See Project</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--./end of works section-->
       <!-- about myself section -->
       <section id="about" class="about-myself-section">
@@ -428,6 +442,7 @@
       <!-- end contact form section -->
     </main>
     <!-- ./end of main section -->
+    <script src="./js/popup.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

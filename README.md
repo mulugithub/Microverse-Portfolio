@@ -44,9 +44,10 @@
 - **[Works ]**
 - **[About myself]**
 - **[Contact form]**
-- **[ Desktop Version]**
-- **[ Animation and Transition]**
-- **[ Mobile menu]**
+- **[Desktop Version]**
+- **[Animation and Transition]**
+- **[Mobile menu]**
+- **[see project details popup modal]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -15,7 +15,7 @@ const projects = [
       './images/Snapshoot Portfolio-desk-1.png',
     ],
     technologies: [
-      ['html', 'css', 'JavaScript'], [''],
+      ['html', 'css', 'JavaScript'], ['Ruby on rails', 'Ruby', 'Bootstrap'],
     ],
     client: ['CANOPY', 'CANOPY'],
     roles: ['./images/Counter.png', ['Back End Dev', 'Back End Dev'], ['2015', '2015']],
@@ -109,7 +109,7 @@ main.insertBefore(workSection, main.children[1]);
 
 // Create projectCards dynamically using the information in the projects array
 projects.forEach((project, index) => {
-  const projectCards= document.createElement('div');
+  const projectCards = document.createElement('div');
   projectCards.setAttribute('class', 'cards-container');
   projectCards.classList.add('project');
   projectCards.innerHTML = `
@@ -146,6 +146,7 @@ projects.forEach((project, index) => {
 // select and  hide  the second li item from the class tags for desktop version
 const hideSecondTechnology = document.querySelector('.left-block .tags li:nth-child(2)');
 hideSecondTechnology.style.display = 'none';
+
 
 // Get the popup-modal-container class
 const popupModal = document.querySelector('.popup-modal-container');

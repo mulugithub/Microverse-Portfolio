@@ -146,3 +146,78 @@ projects.forEach((project, index) => {
 // select and  hide  the second li item from the class tags for desktop version
 const hideSecondTechnology = document.querySelector('.left-block .tags li:nth-child(2)');
 hideSecondTechnology.style.display = 'none';
+
+// Get the popup-modal-container class
+const popupModal = document.querySelector('.popup-modal-container');
+const overlay = document.querySelector('.overlay');
+
+const closeModal = () => {
+  popupModal.classList.toggle('hide');
+  overlay.classList.toggle('hide');
+  body.style.overflow = 'auto';
+};
+
+const showModal = () => {
+  popupModal.classList.toggle('hide');
+  overlay.classList.toggle('hide');
+  body.style.overflow = 'hidden';
+};
+
+// Define functions to show the popup modal
+function showPopupModal(projectId) {
+  popupModal.innerHTML = `
+  <div class='modal-header'>
+   <h2 class="project-title mobile" >${projects[projectId].name[0]}</h2>
+   <h2 class="project-title desktop">${projects[projectId].name[1]}</h2>
+   <a class='close-modal'>&times; </a>
+  </div>
+  <div class='modal-content'>
+    <ul class="project-detail">
+      <li class="card-client mobile">${projects[projectId].client[0]}</li>
+      <li class="card-client desktop">${projects[projectId].client[1]}</li>
+      <li class="card-role"><img src=" ${projects[projectId].roles[0]}" alt="counter" /></li>
+      <li class="card-role mobile"> ${projects[projectId].roles[1][0]}</li>
+      <li class="card-role desktop">${projects[projectId].roles[1][1]}</li>
+      <li class="card-role"><img src="${projects[projectId].roles[0]}" alt="counter" /></li>
+      <li class="card-role mobile">${projects[projectId].roles[2][0]}</li>
+      <li class="card-role desktop">${projects[projectId].roles[2][1]}</li>
+    </ul>
+    
+    <div class='snapshoot-popup mobile'> <img src="${projects[projectId].featured_images[0]}" alt="${projects[projectId].name[0]}"></div>
+    <div class='snapshoot-popup desktop'> <img src="${projects[projectId].featured_images[1]}" alt="${projects[projectId].name[1]}"></div>
+
+    <p class="description mobile">${projects[projectId].details[0]}</p>
+    <p class="description desktop">${projects[projectId].details[1][0]}</p>
+    <p class="description desktop">${projects[projectId].details[1][1]}</p>
+    <ul class="tags">
+      <li class="tags-button mobile">${projects[projectId].technologies[0][0]}</li>
+      <li class="tags-button mobile">${projects[projectId].technologies[0][1]}</li>
+      <li class="tags-button mobile">${projects[projectId].technologies[0][2]}</li>
+      <li class="tags-button desktop">${projects[projectId].technologies[1][1]}</li>
+      <li class="tags-button desktop">${projects[projectId].technologies[1][2]}</li>
+    </ul>
+
+    <img class="mobile" src="images/divider-mobile-modal.png" alt="divider image for mobile popup">
+    
+    <div class="live-source">
+    <a type='button' class='project-action' href='https://${projects[projectId].liveLink}' target='_blank'>See Live <img src='./images/Icon-Live.png' alt='Live link icon'></a>
+    <a type='button' class='project-action' href='https://${projects[projectId].sourceLink}' target='_blank'>See Source <img src='./images/Icon-GitHub.png' alt='Github icon'></a>
+    </div>
+    
+    </div>
+  `;
+}
+
+const projectDetailClickHandler = (projectId) => {
+  showPopupModal(projectId);
+  showModal();
+  document.querySelector('.close-modal').addEventListener('click', closeModal);
+};
+
+const popupBtns = document.querySelectorAll('.project-action');
+popupBtns.forEach((btn) => {
+  const projectId = btn.getAttribute('data-project-id');
+  btn.addEventListener('click', () => projectDetailClickHandler(projectId));
+});
+
+overlay.addEventListener('click', closeModal);

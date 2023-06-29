@@ -144,7 +144,7 @@ main {
   margin: -0.1rem -2.4rem;
   gap: 0.25rem;
   border-bottom-left-radius: 5.6rem;
-  background-image: url(images/header-shapes\ mobile.png);
+  background-image: url(../images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -406,7 +406,7 @@ button:disabled,
 }
 
 .contact-wrapper {
-  background-image: url(images/contact-form-shapes-mobile.png);
+  background-image: url(../images/contact-form-shapes-mobile.png);
   background-size: 69%;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -522,7 +522,7 @@ input[type="submit"]:active {
   }
 
   .headline-section {
-    background-image: url(images/Header\ bgdesktop@2x.png);
+    background-image: url(../images/Header\ bgdesktop@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -665,7 +665,7 @@ input[type="submit"]:active {
   /* contact section */
 
   .contact-wrapper {
-    background-image: url(images/contact\ form\ bgdesktop@1x.png);
+    background-image: url(../images/contact\ form\ bgdesktop@1x.png);
     background-size: 92%;
     background-repeat: no-repeat;
     background-position: center;

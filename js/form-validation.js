@@ -28,3 +28,8 @@ function checkEmail() {
     email.classList.remove('is-invalid');
   }
 }
+// add evenlistener to form element
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkEmail();
+});

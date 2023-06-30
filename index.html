@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/popup-modal.css" />
   </head>
   <body>
-
     <!-- header section-->
     <header>
       <a href="#" class="my-logo">My Logo</a>
@@ -31,26 +30,24 @@
       </nav>
       <!-- mobile menu-->
       <div class="mobile-menu hidden">
-        <span class="close-menu"><img src="images/Iconmenu-close.png" alt="close menu icon"></span>
-      <div class="mobile-menu-content">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <span class="close-menu"
+          ><img src="images/Iconmenu-close.png" alt="close menu icon"
+        /></span>
+        <div class="mobile-menu-content">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </header>
     <!--./end of header section-->
 
     <!-- overlay-->
-    <div class="overlay hide">
-      
-    </div>
-   
-      <!-- popup modal container-->
-    <div class="popup-modal-container hide">
+    <div class="overlay hide"></div>
 
-    </div>
-     <!-- end of popup modal container-->
+    <!-- popup modal container-->
+    <div class="popup-modal-container hide"></div>
+    <!-- end of popup modal container-->
 
     <!-- main section-->
     <main>
@@ -105,10 +102,10 @@
         </div>
       </section>
       <!-- ./end of headeline section -->
-    
+
       <!-- works section -->
       <!--./end of works section-->
-      
+
       <!-- about myself section -->
       <section id="about" class="about-myself-section">
         <div class="about-wrapper">
@@ -230,32 +227,46 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it!
           </p>
-          <form action="https://formspree.io/f/xdovrpgk" method="POST">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              maxlength="30"
-              placeholder="Enter your full name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your Email "
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              placeholder="Write your message here..."
-              required
-            ></textarea>
+          <form
+            action="https://formspree.io/f/xdovrpgk"
+            method="POST"
+            id="form"
+            name="form">
+            <div class="form-control">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                maxlength="30"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your Email "
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                maxlength="500"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
             <input type="submit" name="Get in touch" value="Get in touch" />
+            <span class="error" aria-live = "polite"></span>
           </form>
           <img
             src="images/ShapeHome Indicator.png"
@@ -267,6 +278,7 @@
       <!-- end contact form section -->
     </main>
     <!-- ./end of main section -->
+    <script src="./js/form-validation.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/menu.js"></script>
   </body>

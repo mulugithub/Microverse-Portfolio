@@ -11,16 +11,16 @@ const projects = [
       ['Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.'],
     ],
     featured_images: [
-      './images/Snapshoot Portfolio-mob-01.png',
-      './images/Snapshoot Portfolio-desk-1.png',
+      './images/conference-page-mobile-black.png',
+      './images/conference-page-desktop.png',
     ],
     technologies: [
       ['html', 'css', 'JavaScript'], ['Ruby on rails', 'Ruby', 'Bootstrap'],
     ],
     client: ['CANOPY', 'CANOPY'],
     roles: ['./images/Counter.png', ['Back End Dev', 'Back End Dev'], ['2015', '2015']],
-    liveLink: 'mulugithub.github.io/Microverse-Portfolio/',
-    sourceLink: 'github.com/mulugithub/Microverse-Portfolio',
+    liveLink: 'mulugithub.github.io/module-one-capstone/',
+    sourceLink: 'github.com/mulugithub/module-one-capstone/',
   },
   {
     name: ['Multi-Post Stories', 'Multi-Post Stories'],
